@@ -1,0 +1,23 @@
+{
+  "name": "wasmbind-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "cmake:config": "cmake -Bbin -GNinja -DCMAKE_BUILD_TYPE=MinSizeRel -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_TOOLCHAIN_FILE=./cmake/freestanding.cmake",
+    "cmake:build": "cmake --build bin",
+    "pack": "webpack --mode=development",
+    "serve": "npx http-server ./dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "webpack": "^5.100.2",
+    "webpack-cli": "^6.0.1"
+  },
+  "dependencies": {
+    "emlite": "^0.1.27"
+  }
+}
