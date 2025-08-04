@@ -5,7 +5,7 @@
   "scripts": {
     "cmake:config": "cmake -Bbin -GNinja -DCMAKE_BUILD_TYPE=MinSizeRel -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_TOOLCHAIN_FILE=./cmake/freestanding.cmake",
     "cmake:build": "cmake --build bin",
-    "pack": "webpack --mode=development",
+    "pack": "webpack --mode=production",
     "serve": "npx http-server ./dist"
   },
   "keywords": [],
@@ -18,6 +18,6 @@
     "webpack-cli": "^6.0.1"
   },
   "dependencies": {
-    "emlite": "^0.1.27"
+    "emlite": "^0.1.31"
   }
 }
