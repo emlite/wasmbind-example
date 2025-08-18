@@ -7,6 +7,7 @@ Do note that using npm is not strictly necessary, however it simplifies bundling
 ## Usage
 ```bash
 git clone https://github.com/emlite/wasmbind-example --recurse-submodules
+cd wasmbind-example
 npm i
 npm run cmake:config
 npm run cmake:build
