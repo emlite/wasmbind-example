@@ -18,6 +18,6 @@
     "webpack-cli": "^6.0.1"
   },
   "dependencies": {
-    "emlite": "^0.1.32"
+    "emlite": "^0.1.33"
   }
 }
